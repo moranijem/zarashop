@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-
+const port= process.env.PORT||3000
 
 var bodyParser = require('body-parser')
 app.use(bodyParser.json());       // to support JSON-encoded bodies
@@ -77,4 +77,4 @@ app.put('/api/deleteTheClothe', (request, response) => {
 
 
   
-app.listen(3001, () => { console.log("App is Listening to 3000")})
+app.listen(port, () => { console.log("App is Listening to 3000")})
