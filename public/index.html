@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id="welcome" style="text-align: center;">Zara Online Store!</h1>
+    <div id="root"></div>
+    <h1 id='ResultMsg'></h1>
+   
+    <div>
+        <h1>Add New Clothe </h1>
+        <form onsubmit="addNewClothe(event)">
+        <input type="text" placeholder="IMG Url" name="nurl"><br><br>
+        <input type="number" placeholder="Price" name="nPrice"><br><br>
+        <button type="submit" class="bu"  style="background-color: beige;"> Add  </button><br><br>
+        </form>
+     
+    </div>
+    <div>
+        <h1>Remove Clothe</h1>
+        <form onsubmit="deleteClothe(event)">
+        <input type="text" placeholder="Clothe ID" name="ItemId1"><br><br>
+        <button type="submit" class="bu1"   style="background-color: beige;"> Delete  </button><br><br>
+        </form>
+     
+    </div>
+
+    <script src="functions.js"></script>
+</body>
+</html>
