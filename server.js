@@ -1,9 +1,7 @@
 const express = require('express')
 const app = express()
 const port= process.env.PORT||3000
-var path = require("path");
-var path = require("path");
-var http = require('http');
+
 var bodyParser = require('body-parser')
 app.use(bodyParser.json());       // to support JSON-encoded bodies
 app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
@@ -11,9 +9,7 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
 }));
 
 app.use(express.static('public'))
-var urlencodeParser= bodyParser.urlencoded({extended: false});
-    app.use(express.static(path.join(__dirname,"")));
-app.use(express.static(path.join(__dirname,"public")));
+
 
 
 const menu = [
