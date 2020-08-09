@@ -9,7 +9,9 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
 }));
 
 app.use(express.static('public'))
-
+var urlencodeParser= bodyParser.urlencoded({extended: false});
+    app.use(express.static(path.join(__dirname,"")));
+app.use(express.static(path.join(__dirname,"public")));
 
 
 const menu = [
